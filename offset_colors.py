@@ -62,7 +62,7 @@ def parse_rgbs_logic(rgb_split: list):
         between_commas = rgb.split(',')
         result = []
         for idx, v in enumerate(between_commas):
-            value = v.strip()
+            value = v.strip().split(')')[0]
 
             if len(value) > 3:
                 break
@@ -145,8 +145,8 @@ def apply_offset_in_file(file_path :str, offset_by :float) -> int:
 if __name__ == "__main__":
     path = sys.argv[1]
     offset_value = float(sys.argv[2])
-    # path = r"/usr/share/themes/Midnight-Green/gnome-shell/gnome-shell.css"
-    # offset_value = -0.5
+    # path = r"/usr/share/themes/Srinivasa-dark/gnome-shell/gnome-shell.css"
+    # offset_value = 0.2
     apply_offset_in_file(path, offset_value)
 
 # python3 Code/Rice/offset_colors.py /usr/share/themes/Midnight-Green/gnome-shell/gnome-shell.css -0.3
