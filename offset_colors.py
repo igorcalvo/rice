@@ -149,4 +149,4 @@ if __name__ == "__main__":
     # offset_value = 0.2
     apply_offset_in_file(path, offset_value)
 
-# python3 Code/Rice/offset_colors.py /usr/share/themes/Midnight-Green/gnome-shell/gnome-shell.css -0.3
+# python code/rice/offset_colors.py ~/.themes/Midnight-Green/gnome-shell/gnome-shell.css -0.3
