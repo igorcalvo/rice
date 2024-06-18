@@ -149,5 +149,3 @@ if __name__ == "__main__":
     # offset_value = 0.2
     apply_offset_in_file(path, offset_value)
 
-# python offset_colors.py ~/.themes/Marble-blue-dark/gnome-shell/gnome-shell.css -0.2
-# /home/calvo/.local/share/gnome-shell/extensions/custom-accent-colors@demiskp/resources/purple
