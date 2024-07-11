@@ -58,7 +58,6 @@ if __name__ == "__main__":
         with open(file_path, 'w') as f:
             content = ''
             counter = 0
-            # for line in file.readlines():
             for line_number, line in enumerate(lines):
                 for key in replace_dict.keys():
                     if type(key) == type(1):
@@ -69,7 +68,6 @@ if __name__ == "__main__":
                             continue
                     else:
                         if str(key) in line and '.' not in line:
-                            # value = line.split(str(key))[-1]
                             dict_color = str(colors[replace_dict[key]])
                             line = replace_color(line, dict_color)
                             counter += 1
