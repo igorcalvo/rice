@@ -20,10 +20,15 @@ dunst = {
     354: "darker",
 }
 
+cava = {
+    "foreground = ": "primary"
+}
+
 paths_to_replace = {
     f"{home_path}/code/linux/dotfiles/.config/bspwm/bspwmrc": bspwm,
     f"{home_path}/code/linux/dotfiles/.config/polybar/config.ini": polybar,
-    f"{home_path}/code/linux/dotfiles/.config/dunst/dunstrc": dunst
+    f"{home_path}/code/linux/dotfiles/.config/dunst/dunstrc": dunst,
+    f"{home_path}/code/linux/dotfiles/.config/cava/config": cava
 }
 
 def strip_color_value(color_value: str) -> str:
