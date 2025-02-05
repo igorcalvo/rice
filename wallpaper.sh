@@ -1,15 +1,3 @@
-### Offset Colors
-```bash
-python offset_colors.py ~/.themes/Marble-blue-dark/gnome-shell/gnome-shell.css -0.2
-```
-
-### Load Colors
-```bash
-python load_colors.py
-```
-
-### Wallpaper
-```bash
 # Dimensions
 magick identify a.jpg
 
@@ -30,5 +18,3 @@ magick result.png blurred.png -compose Overlay -composite result2.png
 
 # View
 img result2.png
-```
-
