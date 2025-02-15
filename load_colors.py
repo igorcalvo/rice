@@ -21,7 +21,8 @@ dunst = {
 }
 
 cava = {
-    "foreground = ": "primary"
+    "gradient_color_1 = ": "primary",
+    "gradient_color_2 = ": "lighter"
 }
 
 paths_to_replace = {
