@@ -11,6 +11,7 @@ magick a.jpg -gravity southeast -extent 1920x1080+200 a2.png
 
 # Shift hue
 magick a2.jpg -modulate 100,100,50 a3.png # 50% = 200%; 0% = 300%
+magick symbol.png -set option:modulate:colorspace hsv  -modulate 65,75,122 s.png
 
 # Flip
 magick a.jpg -flop b.jpg # Horizontally
