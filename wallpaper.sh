@@ -20,6 +20,7 @@ magick a.jpg -flip b.jpg # Vertically
 # Compose
 magick a2.jpg b2.jpg +append -quality 100 result.jpg
 magick wallpaper-prior.png sb.png -geometry +1920+0 -composite wallpaper2.png
+magick original.png replacement.png -gravity center -composite output.png
 
 # Blur & Overlay
 magick result.jpg -blur 0x10 -evaluate Multiply 0.3 blurred.png
